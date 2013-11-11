@@ -38,3 +38,14 @@ Setting up WEB development environment for Maverick
 
 	--image of network preferences
 
+
+
+Set all your network interface dns servers to 127.0.0.1:
+    networksetup -setdnsservers Ethernet 127.0.0.1
+    networksetup -setdnsservers Wi-Fi 127.0.0.1
+    ...
+Create a file /etc/resolver/whatever:
+    nameserver 127.0.0.1
+    domain .
+Set up a local DNS server and be happy.
+
